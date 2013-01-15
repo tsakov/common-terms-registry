@@ -1,0 +1,32 @@
+{
+    "typeName": "commonTermsRegistry.production",
+    "options": {
+        "gradeNames": ["autoInit", "fluid.littleComponent"],
+        "components": {
+            "server": {
+                "type": "gpii.server",
+                "options": {
+                    "logging": false,
+                    "components": {
+                        "commonTermsRegistry": {
+                            "type": "gpii.commonTermsRegistry",
+                            "options": {
+                                "termSourceUrl": "http://localhost:5984/term/%name"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "demands": [{
+        "demandingName": "rawTermSource",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "funcName": "gpii.dataSource.CouchDB"
+        }
+    }],
+    "includes": [
+        "./base.json"
+    ]
+}

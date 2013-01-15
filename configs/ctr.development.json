@@ -1,0 +1,18 @@
+{
+    "typeName": "commonTermsRegistry.development",
+    "options": {
+        "gradeNames": ["autoInit", "fluid.littleComponent"],
+        "components": {
+            "server": {
+                "type": "gpii.server",
+                "options": {
+                    "logging": true,
+                    "port": 8082
+                }
+            }
+        }
+    },
+    "includes": [
+        "../commonTermsRegistry/configs/development.json"
+    ]
+}

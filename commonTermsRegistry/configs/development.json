@@ -1,0 +1,38 @@
+{
+    "typeName": "commonTermsRegistry.development",
+    "options": {
+        "gradeNames": ["autoInit", "fluid.littleComponent"],
+        "components": {
+            "server": {
+                "type": "gpii.server",
+                "options": {
+                    "logging": true,
+                    "components": {
+                        "commonTermsRegistry": {
+                            "type": "gpii.commonTermsRegistry",
+                            "options": {
+                                "termSourceUrl": "file://%root/../testData/mockupRegistry.json"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "demands": [{
+        "demandingName": "gpii.urlExpander",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "funcName": "gpii.urlExpander.development"
+        }
+    }, {
+        "demandingName": "rawTermSource",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "funcName": "gpii.dataSource.URL"
+        }
+    }],
+    "includes": [
+        "./base.json"
+    ]
+}

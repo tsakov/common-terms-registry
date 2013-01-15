@@ -1,0 +1,26 @@
+{
+    "demands": [{
+        "demandingName": "gpii.requests.request.handler",
+        "contextNames": "termGet",
+        "demandSpec": {
+            "options": {
+                "invokers": {
+                    "handle": {
+                        "funcName": "gpii.requests.request.handler.termGet",
+                        "args": ["{requestProxy}", "{request}.req.params.name", "{commonTermsRegistry}.termSource"]
+                    }
+                }
+            }
+        }
+    }, {
+        "demandingName": "termSource",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "options": {
+                "components": {
+                    "rawSource": "{rawTermSource}"
+                }
+            }
+        }
+    }]
+}
