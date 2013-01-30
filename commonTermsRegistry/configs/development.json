@@ -11,7 +11,8 @@
                         "commonTermsRegistry": {
                             "type": "gpii.commonTermsRegistry",
                             "options": {
-                                "termSourceUrl": "file://%root/../testData/commonTerms/%name.json"
+                                "termSourceUrl": "file://%root/../testData/commonTerms/%name.json",
+                                "termQueryUrl": "file://%root/../testData/commonTerms/allTerms.json"
                             }
                         }
                     }
@@ -27,6 +28,12 @@
         }
     }, {
         "demandingName": "rawTermSource",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "funcName": "gpii.dataSource.URL"
+        }
+    }, {
+        "demandingName": "rawTermQuerySource",
         "contextNames": "gpii.commonTermsRegistry",
         "demandSpec": {
             "funcName": "gpii.dataSource.URL"

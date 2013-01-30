@@ -12,5 +12,14 @@ To start the registry
 To browse the registry
 
 	Visit localhost:{port}/term/{name}
-	
+
+To perform queries
+
+	Visit localhost:{port}/term?{query}
+
 - The default port is 8082.
+
+### Examples
+
+	localhost:8082/term/fontSize
+	localhost:8082/term?valueSpace=enumerated.color

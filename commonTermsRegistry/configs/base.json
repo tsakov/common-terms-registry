@@ -13,12 +13,35 @@
             }
         }
     }, {
+        "demandingName": "gpii.requests.request.handler",
+        "contextNames": "termQuery",
+        "demandSpec": {
+            "options": {
+                "invokers": {
+                    "handle": {
+                        "funcName": "gpii.requests.request.handler.termQuery",
+                        "args": ["{requestProxy}", "{request}.req.query", "{commonTermsRegistry}.termQuerySource"]
+                    }
+                }
+            }
+        }
+    }, {
         "demandingName": "termSource",
         "contextNames": "gpii.commonTermsRegistry",
         "demandSpec": {
             "options": {
                 "components": {
                     "rawSource": "{rawTermSource}"
+                }
+            }
+        }
+    }, {
+        "demandingName": "termQuerySource",
+        "contextNames": "gpii.commonTermsRegistry",
+        "demandSpec": {
+            "options": {
+                "components": {
+                    "rawSource": "{rawTermQuerySource}"
                 }
             }
         }
