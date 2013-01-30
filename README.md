@@ -13,4 +13,4 @@ To browse the registry
 
 	Visit localhost:{port}/term/{name}
 	
--The default port is 8082.
+- The default port is 8082.

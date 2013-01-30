@@ -1,0 +1,6 @@
+{
+        "name": "backgroundColor",
+        "fullName": "http://registry.gpii.org/common/backgroundColor",
+        "valueSpace": "enumerated.color",
+        "description": "backgroundColor is the color of your background"
+}

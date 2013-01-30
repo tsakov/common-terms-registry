@@ -1,0 +1,6 @@
+{
+        "name": "foregroundColor",
+        "fullName": "http://registry.gpii.org/common/foregroundColor",
+        "valueSpace": "enumerated.color",
+        "description": "foregroundColor is the color of your foreground"
+}

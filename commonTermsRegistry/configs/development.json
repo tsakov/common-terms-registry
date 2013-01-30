@@ -11,7 +11,7 @@
                         "commonTermsRegistry": {
                             "type": "gpii.commonTermsRegistry",
                             "options": {
-                                "termSourceUrl": "file://%root/../testData/mockupRegistry.json"
+                                "termSourceUrl": "file://%root/../testData/commonTerms/%name.json"
                             }
                         }
                     }

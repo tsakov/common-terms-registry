@@ -1,0 +1,6 @@
+{
+        "name": "fontSize",
+        "fullName": "http://registry.gpii.org/common/fontSize",
+        "valueSpace": "range(8, 32, 1)",
+        "description": "fontSize is the size of your font"
+}
